@@ -36,6 +36,7 @@
 					$("#pikame").PikaChoose();
 				});
 		</script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <?php if(isSet($_SESSION["kasutajanimi"])): ?>
@@ -43,12 +44,12 @@
       <a href="?lahku=jah">lahku</a>
       <ul>
         
-        <?php if($_SESSION["roll"]=="haldur"): ?>
+        <?php if($_SESSION["roll"]=="treener"): ?>
           <li><a href="kirjeldused.php">Haldamine</a></li>        
         <?php endif ?>
       </ul>
 	   <ul>  
-        <?php if($_SESSION["roll"]=="tehnik"): ?>
+        <?php if($_SESSION["roll"]=="treener"): ?>
           <li><a href="tehnikuleht.php">Parandust vajavad tooted</a></li>        
         <?php endif ?>
       </ul>
@@ -59,6 +60,8 @@
     <ul>
     
 	<li><a href="tootajalogin.php" class="current">Logimine</a></li>
+  
+ 
     </ul>
     </nav>
 	</header>
